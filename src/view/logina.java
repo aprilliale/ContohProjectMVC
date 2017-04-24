@@ -141,7 +141,7 @@ public class logina extends javax.swing.JFrame {
         
         try{
             try(Statement statement = (Statement) login_koneksi.GetConnection().createStatement()){
-                statement.executeUpdate("INSERT INTO login(username, password) VALUES ('"+uname+"','"+pass+"');");
+                statement.executeUpdate("INSERT INTO tb_akun(username, password) VALUES ('"+uname+"','"+pass+"');");
             }
             JOptionPane.showMessageDialog(null,"Selamat! Anda berhasil Sign Up!");
         } catch(Exception t){
