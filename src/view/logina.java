@@ -102,7 +102,7 @@ public class logina extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, -10, 500, 510);
 
-        pack();
+        setBounds(0, 0, 665, 535);
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed

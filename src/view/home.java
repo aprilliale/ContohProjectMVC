@@ -250,7 +250,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 310, 1020, 402);
 
-        pack();
+        setBounds(0, 0, 1032, 577);
     }// </editor-fold>//GEN-END:initComponents
 
     private void bersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bersihkanActionPerformed
