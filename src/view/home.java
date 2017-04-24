@@ -245,6 +245,11 @@ public class home extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         getContentPane().add(jScrollPane1);
@@ -296,6 +301,18 @@ public class home extends javax.swing.JFrame {
         String haloUser = logina.statusAktif;
         user.setText(haloUser);
     }//GEN-LAST:event_formWindowOpened
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        // TODO add your handling code here:
+        int baris = jTable1.getSelectedRow();
+        if(baris != -1){
+            kode.setText(jTable1.getValueAt(baris, 0).toString());
+            nama.setText(jTable1.getValueAt(baris, 1).toString());
+            kat.setSelectedItem(jTable1.getValueAt(baris, 2).toString());
+            jenis.setSelectedItem(jTable1.getValueAt(baris, 3).toString());
+            harga.setText(jTable1.getValueAt(baris, 4).toString());
+        }
+    }//GEN-LAST:event_jTable1MouseClicked
 
     /**
      * @param args the command line arguments

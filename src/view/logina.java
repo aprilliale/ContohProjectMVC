@@ -6,7 +6,6 @@
 package view;
 
 import com.mysql.jdbc.Connection;
-import controller.c_koneksi;
 import controller.login_koneksi;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

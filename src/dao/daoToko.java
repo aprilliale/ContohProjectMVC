@@ -93,7 +93,7 @@ public class daoToko  implements implementToko{
         } catch (SQLException ex) {
             Logger.getLogger(daoToko.class.getName()).log(Level.SEVERE,null, ex);
         }
-
+        //return generatekey();
     }
 
     @Override
